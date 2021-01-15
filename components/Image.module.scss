@@ -1,0 +1,33 @@
+.image_wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &:hover {
+        img {
+            opacity: 0.5;
+        }
+        p {
+            color: var(--Black);
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        padding: 22px;
+        font-family: "josefin";
+        font-weight: 300;
+        color: var(--White);
+        position: absolute;
+        bottom: 0;
+        font-size: 1.5rem;
+        width: 72%;
+
+        @media screen and (max-width: 880px) {
+            width: 45%;
+        }
+    }
+}
