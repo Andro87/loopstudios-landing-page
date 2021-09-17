@@ -1,21 +1,22 @@
+module.exports = {
+    reactStrictMode: true
+};
 const config = {
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/,
-      issuer: {
-        test: /\.(js|ts)x?$/,
-      },
-      use: ["@svgr/webpack"],
-    });
+    webpack(config) {
+        config.module.rules.push({
+            test: /\.svg$/,
 
-    return config;
-  },
+            use: ["@svgr/webpack"]
+        });
+
+        return config;
+    }
 };
 
 module.exports = {
-  ...config,
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
-  },
+    ...config,
+    i18n: {
+        locales: ["en"],
+        defaultLocale: "en"
+    }
 };

@@ -1,21 +1,17 @@
+@import "../styles/variables";
+
 .image_wrap {
     display: flex;
     flex-direction: column;
     position: relative;
-
-    &:hover {
-        img {
-            opacity: 0.5;
-        }
-        p {
-            color: var(--Black);
-        }
+    width: 100%;
+    picture {
+        display: flex;
     }
-
+    picture,
     img {
         width: 100%;
     }
-
     p {
         padding: 22px;
         font-family: "josefin";
@@ -23,11 +19,21 @@
         color: var(--White);
         position: absolute;
         bottom: 0;
-        font-size: 1.5rem;
-        width: 72%;
+        font-size: 1.7rem;
+        width: 45%;
 
-        @media screen and (max-width: 880px) {
-            width: 45%;
+        @media screen and (min-width: $desktop) {
+            width: 72%;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        img {
+            opacity: 0.3;
+        }
+        p {
+            color: var(--Black);
         }
     }
 }
