@@ -283,7 +283,7 @@ export default function Home() {
 
                     <div className={styles.box}>
                         <div className={styles.social}>
-                            <a href="#">
+                            <a href="#" aria-label="facebook icon">
                                 <svg
                                     width="24"
                                     height="24"
@@ -296,7 +296,7 @@ export default function Home() {
                                     />
                                 </svg>
                             </a>
-                            <a href="#">
+                            <a href="#" aria-label="twitter icon">
                                 <svg
                                     width="24"
                                     height="20"
@@ -309,7 +309,7 @@ export default function Home() {
                                     />
                                 </svg>
                             </a>
-                            <a href="#">
+                            <a href="#" aria-label="pinterest icon">
                                 <svg
                                     width="24"
                                     height="24"
@@ -322,7 +322,7 @@ export default function Home() {
                                     />
                                 </svg>
                             </a>
-                            <a href="#">
+                            <a href="#" aria-label="instagram icon">
                                 <svg
                                     width="24"
                                     height="24"
